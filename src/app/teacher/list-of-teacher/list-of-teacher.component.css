@@ -1,0 +1,21 @@
+h1 {
+  margin-top: 100px;
+  text-transform: uppercase;
+  color: rgb(48, 37, 22) !important;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.card {
+  background-color: rgba(255, 235, 205, 0.9);
+  border-radius: 25px;
+  color: #888;
+}
+.card tr {
+  color: #444;
+}
+.card tr th a {
+  background-color: rgba(228, 159, 55, 0.9);
+}

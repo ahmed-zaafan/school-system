@@ -1,0 +1,26 @@
+<h1 class="text-center text-info">list of our teacher</h1>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-body">
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>COURSE</th>
+          <th>ACTION</th>
+        </tr>
+        <tr *ngFor="let teacher of allData">
+          <th>{{ teacher.id }}</th>
+          <th>{{ teacher.name }}</th>
+          <th>{{ teacher.course }}</th>
+          <th>
+            <button (click)="remove(teacher.id)">
+              <img src="../../../assets/img/delet.png" alt="" />
+            </button>
+            <a routerLink="{{ teacher.id }}" class="btn">edite</a>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+h2 {
+  margin-top: 100px;
+  color: #333;
+}
+form {
+  border-radius: 25px;
+  background-color: rgba(222, 184, 135, 0.9);
+  max-width: 450px;
+  padding: 25px;
+}

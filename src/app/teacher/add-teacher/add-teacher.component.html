@@ -1,0 +1,23 @@
+<h1 class="text-center text-info">add taecher</h1>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <label for="">teacher name</label>
+        <input type="text" #userName="ngModel" [(ngModel)]="object.name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="">teacher course</label>
+        <input type="text" #course="ngModel" [(ngModel)]="object.course" class="form-control" required>
+      </div>
+      <div *ngIf="course.valid && userName.valid">
+        <button (click)="save()" class="btn btn-info btn-block w-50 mx-auto"> add </button>
+
+      </div>
+      <div *ngIf="course.invalid && userName.invalid">
+        <button disabled class="btn btn-info btn-block w-50 mx-auto"> add </button>
+
+      </div>
+    </div>
+  </div>
+</div>

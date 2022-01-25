@@ -1,0 +1,37 @@
+.activites {
+  margin-top: 100px;
+}
+.activ {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+.activ .row {
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.card {
+  background-color: rgba(255, 235, 205, 0.781);
+  border-radius: 25px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.card img {
+  border-radius: 25px;
+}
+.card:hover {
+  animation: anime;
+  animation-duration: 0.5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes anime {
+  0% {
+    transform: translatey(15px);
+  }
+  100% {
+    transform: translatey(15px);
+  }
+}

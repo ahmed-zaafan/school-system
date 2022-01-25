@@ -1,0 +1,23 @@
+.home {
+  margin: 100px 0px 0px 20px;
+}
+.home h2 {
+  color: rgb(48, 37, 22);
+}
+.home form {
+  border-radius: 25px;
+  background-color: rgba(222, 184, 135, 0.78);
+  max-width: 450px;
+  padding: 25px;
+}
+.home form input {
+  max-width: 200px;
+}
+.home form .text-muted {
+  color: black !important;
+}
+@media (max-width: 950px) {
+  h2 {
+    text-align: center;
+  }
+}
